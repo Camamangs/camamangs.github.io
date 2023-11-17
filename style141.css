@@ -1,0 +1,182 @@
+body {
+	background-image: url('background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+.wrapper > * {
+	padding: 10px;
+	margin: 10px;
+	flex: 1 100%;
+	border-radius: 10px;
+}
+
+.pic-contact {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.picture {
+	background: rgba(53, 50, 49, 0.37);
+	backdrop-filter: blur(20px);
+	color: rgb(255, 203, 136);
+	height: 250px;
+	width: 250px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 25px;
+}
+
+.picture img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50px;
+}
+
+.contact {
+	text-align: left;
+	font-size: 15px;
+	background: rgba(255, 153, 0, 0.616);
+	backdrop-filter: blur(10px);
+	height: 80px;
+	width: 350px;
+	padding: 30px 5px 30px 5px;
+	border-radius: 25px;
+}
+
+.fruit img, .vege img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.header {
+	background: rgba(53, 50, 49, 0.781);
+	backdrop-filter: blur(15px);
+	color: rgb(255, 203, 136);
+	height: auto;
+}
+
+.main {
+	text-align: left;
+	background: rgba(53, 50, 49, 0.781);
+	backdrop-filter: blur(15px);
+	color: rgb(255, 203, 136);
+	height: auto;
+	font-size: 24px;
+}
+
+.sub-main {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	background: rgba(53, 50, 49, 0.781);
+	backdrop-filter: blur(15px);
+	color: rgb(255, 203, 136);
+	height: auto;
+	font-size: 24px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.foodr {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.foodr .picturef img{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	margin-left: 27%;
+}
+
+.picturef {
+	border-radius: 10px;
+	transition: all .35s;
+	z-index: 2;
+}
+
+.picturef:hover {
+	background: rgba(53, 50, 49, 0.945);
+}
+
+.fruit {
+	border-radius: 10px;
+	transition: all .35s;
+	z-index: 2;
+}
+
+.fruit:hover {
+	background: rgba(53, 50, 49, 0.945);
+}
+
+.vege {
+	border-radius: 10px;
+	transition: all .35s;
+	z-index: 2;
+}
+
+.vege:hover {
+	background: rgba(53, 50, 49, 0.945);
+}
+
+.recipe {
+	width: 300px;
+	font-size: 17px;
+}
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.footer {
+	background: rgba(53, 50, 49, 0.781);
+	backdrop-filter: blur(15px);
+	color: rgb(255, 203, 136);
+	height: auto;
+}
+
+.linksholder {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgba(250, 235, 215, 0.445);
+	width: auto;
+}
+
+.aside1 {
+	background: rgba(53, 50, 49, 0.781);
+	backdrop-filter: blur(15px);
+	color: rgb(255, 203, 136);
+}
+.aside2 {
+	background: rgba(53, 50, 49, 0.781);
+	backdrop-filter: blur(15px);
+	color: rgb(255, 203, 136);
+}
+
+@media all and (min-width:  800px) {
+	.main {flex: 3;}
+	.aside1 {order: 1;}
+	.aside2 {order: 2;}
+	.main {order: 2;}
+	.sub-main {order: 3;}
+	.footer {order: 4;}
+}
+
+@media all and (min-width: 600px) {
+	.aside {flex: 1;}
+}
