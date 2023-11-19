@@ -1,6 +1,7 @@
 body {
     margin: 0;
     align-items: center;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -24,14 +25,15 @@ nav {
 
 .logo img{
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
+    left: 9%;
+    top: 40%;
 }
 
 .logo {
-    margin: 1%;
-    font-size: 42px;
-    font-weight: bolder;
+    width: auto;
+    height: auto;
 }
 
 .links {
