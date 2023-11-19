@@ -16,14 +16,28 @@ nav {
     position: fixed;
     display: flex;
     width: 100%;
-    height: 50px;
-    background-color: aqua;
+    height: 120px;
+    background-image: linear-gradient( #071E3D, #071E3D, #071E3D, rgba(255, 255, 0, 0));
     justify-content: space-between;
     align-content: center;
     z-index: 100;
 }
 
-/*change pls*/
+a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover{
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+}
 
 .logo img{
     position: absolute;
@@ -49,18 +63,25 @@ nav {
     display: flex;
     width: 100%;
     height: 700px;
-    background-color: blueviolet;
+    background-image: linear-gradient(#083066,#071E3D);
     justify-content: space-evenly;
     align-items: center;
+    border-color: aqua;
+    border-width: 3px;
+    border-style: ridge;
 }
 
 #about {
     display: flex;
     width: 100%;
     height: 700px;
-    background-color: rgb(43, 226, 125);
     justify-content: space-evenly;
     align-items: center;
+    background-image: url("/images and icons/yes.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #Services {
@@ -68,19 +89,34 @@ nav {
     display: flex;
     width: 100%;
     height: 800px;
-    background-color: rgb(144, 226, 43);
+    background-color: #03142a;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
 }
 
 #Contacts {
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     width: 100%;
-    height: 700px;
-    background-color: rgb(226, 208, 43);
+    height: auto;
+    background-image: linear-gradient( #071E3D, #083066);
     justify-content: space-evenly;
     align-items: center;
+    flex-flow: column nowrap;
+}
+
+#home .content{
+    backdrop-filter: blur(5px);
+}
+
+#home h1{
+    color: white;
+}
+
+span {
+    color: #21E6C1;
 }
 
 .pictureholder {
@@ -95,6 +131,10 @@ nav {
     scale: 0.75;
     width: 325px;
     height: 629px;
+    border-radius: 50%;
+    box-shadow: 7px 9px 42px 17px #21E6C1;
+    -webkit-box-shadow: 7px 9px 42px 17px #21E6C1;
+    -moz-box-shadow: 7px 9px 42px 17px #21E6C1  ;
 }
 
 #home p {
@@ -106,9 +146,19 @@ nav {
     font-size: 45px;
 }
 
+#About .content{
+    padding: 1% 1% 1% 1%;
+    background-color: #083066;
+    border-radius: 1%;
+    box-shadow: 8px 6px 47px 32px rgba(0,0,0,0.49) inset;
+    -webkit-box-shadow: 8px 6px 47px 32px rgba(0,0,0,0.49) inset;
+    -moz-box-shadow: 8px 6px 47px 32px rgba(0,0,0,0.49) inset;
+}
+
 .about {
     height: auto;
     width: 450px;
+    color: white;
 }
 
 .about h2{
@@ -132,6 +182,7 @@ nav {
     font-size: 30px;
     text-align: center;
     width: 100%;
+    color: white;
 }
 
 #Services .expand {
@@ -142,6 +193,35 @@ nav {
     z-index: 0;
     justify-content: center;
     align-items: center;
+    box-shadow: 55px 10px 126px 11px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 55px 10px 126px 11px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 55px 10px 126px 11px rgba(0,0,0,1) inset;
+    color: #21E6C1;
+    font-size: 45px;
+}
+
+.expand.a {
+    background-image: url("/images and icons/webdesign.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.expand.b {
+    background-image: url("/images and icons/gamedev.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.expand.c {
+    background-image: url("/images and icons/programmer.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .expand h1{
@@ -153,18 +233,23 @@ nav {
 }
 
 .cover {
+    text-align: center;
+    font-size: 18px;
+    color: white;
     position: absolute;
     left: -100%;
     width: 100%;
     height: 150px;
-    background-color: crimson;
+    background-color: #03142a;
     transition: left 0.45s ease-in-out, transform 0.45s ease-in-out;
     transform: skewX(-20deg);
     z-index: 1;
     box-shadow: -34px -15px 105px -2px rgba(0,0,0,0.62) inset;
     -webkit-box-shadow: -34px -15px 105px -2px rgba(0,0,0,0.62) inset;
     -moz-box-shadow: -34px -15px 105px -2px rgba(0,0,0,0.62) inset;
+    padding-top: 30px;
 }
+
 
 .expand:hover .cover{
     left: 10%;
